@@ -1,0 +1,4 @@
+TIME                         PID  UID  GID SIG     COREFILE EXE                SIZE
+Fri 2024-01-05 21:11:55 EST 1023 1000 1000 SIGABRT present  /usr/bin/gamescope 2.5M
+Fri 2024-01-05 21:58:40 EST 1033 1000 1000 SIGABRT present  /usr/bin/gamescope 2.5M
+Sun 2024-01-07 23:45:05 EST 1029 1000 1000 SIGABRT present  /usr/bin/gamescope 2.5M
