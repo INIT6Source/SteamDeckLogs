@@ -1,0 +1,105 @@
+           PID: 1100 (gamescope-wl)
+           UID: 1000 (deck)
+           GID: 1000 (deck)
+        Signal: 6 (ABRT)
+     Timestamp: Thu 2024-01-11 22:35:57 EST (3min 16s ago)
+  Command Line: gamescope --generate-drm-mode fixed --xwayland-count 2 -w 1280 -h 800 --default-touch-mode 4 --hide-cursor-delay 3000 --max-scale 2 --fade-out-duration 200 -e -R /run/user/1000/gamescope.JYRzwxG/startup.socket -T /run/user/1000/gamescope.JYRzwxG/stats.pipe -O $'*,eDP-1' --cursor-hotspot 5,3 --cursor /usr/share/steamos/steamos-cursor.png
+    Executable: /usr/bin/gamescope
+ Control Group: /user.slice/user-1000.slice/user@1000.service/app.slice/gamescope-session.service
+          Unit: user@1000.service
+     User Unit: gamescope-session.service
+         Slice: user-1000.slice
+     Owner UID: 1000 (deck)
+       Boot ID: 858c43639bab4e489618a7bb1b341059
+    Machine ID: 013519e787e24b8c886e4f3a7d510696
+      Hostname: steamdeck
+       Storage: /var/lib/systemd/coredump/core.gamescope-wl.1000.858c43639bab4e489618a7bb1b341059.1100.1705030557000000.zst (present)
+  Size on Disk: 2.5M
+       Message: Process 1100 (gamescope-wl) of user 1000 dumped core.
+                
+                Stack trace of thread 1149:
+                #0  0x00007f94ad9b226c n/a (libc.so.6 + 0x8926c)
+                #1  0x00007f94ad962a08 raise (libc.so.6 + 0x39a08)
+                #2  0x00007f94ad94b538 abort (libc.so.6 + 0x22538)
+                #3  0x00007f94ad94b45c n/a (libc.so.6 + 0x2245c)
+                #4  0x00007f94ad95b3d6 __assert_fail (libc.so.6 + 0x323d6)
+                #5  0x000055a29b6fd647 n/a (gamescope + 0x7d647)
+                #6  0x000055a29b7c233f n/a (gamescope + 0x14233f)
+                #7  0x000055a29b6da4fd n/a (gamescope + 0x5a4fd)
+                #8  0x000055a29b6ee501 n/a (gamescope + 0x6e501)
+                #9  0x000055a29b6efb7f n/a (gamescope + 0x6fb7f)
+                #10 0x00007f94adce1943 execute_native_thread_routine (libstdc++.so.6 + 0xe1943)
+                #11 0x00007f94ad9b044b n/a (libc.so.6 + 0x8744b)
+                #12 0x00007f94ada33e40 n/a (libc.so.6 + 0x10ae40)
+                
+                Stack trace of thread 1104:
+                #0  0x00007f94ada26c0f __poll (libc.so.6 + 0xfdc0f)
+                #1  0x000055a29b6f5a17 n/a (gamescope + 0x75a17)
+                #2  0x00007f94adce1943 execute_native_thread_routine (libstdc++.so.6 + 0xe1943)
+                #3  0x00007f94ad9b044b n/a (libc.so.6 + 0x8744b)
+                #4  0x00007f94ada33e40 n/a (libc.so.6 + 0x10ae40)
+                
+                Stack trace of thread 1100:
+                #0  0x00007f94ada26c0f __poll (libc.so.6 + 0xfdc0f)
+                #1  0x000055a29b6f65ff n/a (gamescope + 0x765ff)
+                #2  0x000055a29b6a2353 n/a (gamescope + 0x22353)
+                #3  0x00007f94ad94c850 n/a (libc.so.6 + 0x23850)
+                #4  0x00007f94ad94c90a __libc_start_main (libc.so.6 + 0x2390a)
+                #5  0x000055a29b6c42c5 n/a (gamescope + 0x442c5)
+                
+                Stack trace of thread 1148:
+                #0  0x00007f94ada26c0f __poll (libc.so.6 + 0xfdc0f)
+                #1  0x000055a29b71a512 n/a (gamescope + 0x9a512)
+                #2  0x00007f94adce1943 execute_native_thread_routine (libstdc++.so.6 + 0xe1943)
+                #3  0x00007f94ad9b044b n/a (libc.so.6 + 0x8744b)
+                #4  0x00007f94ada33e40 n/a (libc.so.6 + 0x10ae40)
+                
+                Stack trace of thread 1134:
+                #0  0x00007f94ada34266 epoll_wait (libc.so.6 + 0x10b266)
+                #1  0x00007f94a49f5579 n/a (libspa-support.so + 0x13579)
+                #2  0x00007f94a49e8be3 n/a (libspa-support.so + 0x6be3)
+                #3  0x00007f94adf4026f n/a (libpipewire-0.3.so.0 + 0x4126f)
+                #4  0x00007f94ad9b044b n/a (libc.so.6 + 0x8744b)
+                #5  0x00007f94ada33e40 n/a (libc.so.6 + 0x10ae40)
+                
+                Stack trace of thread 1105:
+                #0  0x00007f94ad9acf0e n/a (libc.so.6 + 0x83f0e)
+                #1  0x00007f94ad9af7a0 pthread_cond_wait (libc.so.6 + 0x867a0)
+                #2  0x00007f94aca5c41e n/a (libvulkan_radeon.so + 0x25c41e)
+                #3  0x00007f94aca3998c n/a (libvulkan_radeon.so + 0x23998c)
+                #4  0x00007f94aca5c34c n/a (libvulkan_radeon.so + 0x25c34c)
+                #5  0x00007f94ad9b044b n/a (libc.so.6 + 0x8744b)
+                #6  0x00007f94ada33e40 n/a (libc.so.6 + 0x10ae40)
+                
+                Stack trace of thread 1106:
+                #0  0x00007f94ad9f89e5 clock_nanosleep (libc.so.6 + 0xcf9e5)
+                #1  0x00007f94ad9fd5e7 __nanosleep (libc.so.6 + 0xd45e7)
+                #2  0x00007f94ac900455 n/a (libvulkan_radeon.so + 0x100455)
+                #3  0x00007f94aca5c34c n/a (libvulkan_radeon.so + 0x25c34c)
+                #4  0x00007f94ad9b044b n/a (libc.so.6 + 0x8744b)
+                #5  0x00007f94ada33e40 n/a (libc.so.6 + 0x10ae40)
+                
+                Stack trace of thread 1151:
+                #0  0x00007f94ad9f89e5 clock_nanosleep (libc.so.6 + 0xcf9e5)
+                #1  0x00007f94ad9fd5e7 __nanosleep (libc.so.6 + 0xd45e7)
+                #2  0x000055a29b6f603f n/a (gamescope + 0x7603f)
+                #3  0x00007f94adce1943 execute_native_thread_routine (libstdc++.so.6 + 0xe1943)
+                #4  0x00007f94ad9b044b n/a (libc.so.6 + 0x8744b)
+                #5  0x00007f94ada33e40 n/a (libc.so.6 + 0x10ae40)
+                
+                Stack trace of thread 1154:
+                #0  0x00007f94ad9acf0e n/a (libc.so.6 + 0x83f0e)
+                #1  0x00007f94ad9af7a0 pthread_cond_wait (libc.so.6 + 0x867a0)
+                #2  0x00007f94adcd9e11 __gthread_cond_wait (libstdc++.so.6 + 0xd9e11)
+                #3  0x000055a29b6d0ee5 n/a (gamescope + 0x50ee5)
+                #4  0x00007f94adce1943 execute_native_thread_routine (libstdc++.so.6 + 0xe1943)
+                #5  0x00007f94ad9b044b n/a (libc.so.6 + 0x8744b)
+                #6  0x00007f94ada33e40 n/a (libc.so.6 + 0x10ae40)
+                
+                Stack trace of thread 1150:
+                #0  0x00007f94ada22900 __open64 (libc.so.6 + 0xf9900)
+                #1  0x000055a29b6d02d5 n/a (gamescope + 0x502d5)
+                #2  0x00007f94adce1943 execute_native_thread_routine (libstdc++.so.6 + 0xe1943)
+                #3  0x00007f94ad9b044b n/a (libc.so.6 + 0x8744b)
+                #4  0x00007f94ada33e40 n/a (libc.so.6 + 0x10ae40)
+                ELF object binary architecture: AMD x86-64
